@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/protein-atlas",
   "title": "Protein Atlas",
   "description": "Human Protein Atlas (HPA) MCP — keyless.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://pipeworx.io/packs/protein-atlas",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-protein-atlas",
