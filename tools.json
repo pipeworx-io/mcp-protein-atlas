@@ -1,0 +1,58 @@
+[
+  {
+    "name": "search_genes",
+    "description": "Search the Human Protein Atlas for human genes/proteins by gene symbol or keyword. Returns each gene with its Ensembl gene id (needed by get_protein and top_tissues), synonyms, and description. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Gene symbol (e.g. \"EGFR\") or keyword (e.g. \"insulin receptor\")."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max genes to return (default 15)."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_protein",
+    "description": "Get a trimmed Human Protein Atlas profile for one protein by Ensembl gene id (e.g. \"ENSG00000146648\"): gene, description, protein class, biological process, molecular function, RNA tissue specificity/distribution, subcellular location, and disease involvement. Use search_genes to find the Ensembl id. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ensembl_id": {
+          "type": "string",
+          "description": "An Ensembl gene id like \"ENSG00000146648\"."
+        }
+      },
+      "required": [
+        "ensembl_id"
+      ]
+    }
+  },
+  {
+    "name": "top_tissues",
+    "description": "List a protein's top-expressing human tissues by RNA expression (nTPM), highest first, for one Ensembl gene id. Use search_genes to find the Ensembl id. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ensembl_id": {
+          "type": "string",
+          "description": "An Ensembl gene id like \"ENSG00000146648\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max tissues to return (default 10)."
+        }
+      },
+      "required": [
+        "ensembl_id"
+      ]
+    }
+  }
+]
