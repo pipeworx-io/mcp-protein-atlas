@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-protein-atlas",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Human Protein Atlas (HPA) MCP — keyless.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "protein-atlas",
     "gatewaySlug": "protein-atlas",
-    "sourceHash": "v1-c7100bf55bbda125884c3d525312985be868ec5cc6d4c20f15423f1afd232817",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-d3548209c34bea0dffc54126e5f7c2c424418dc8662756aa387a3975b4b341fa",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
